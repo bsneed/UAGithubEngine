@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA6FBFE51CCFCBCB009DC936 /* UAGithubEngine_static.h in Headers */ = {isa = PBXBuildFile; fileRef = CA6FBFE41CCFCBCB009DC936 /* UAGithubEngine_static.h */; };
+		CA6FBFE71CCFCBCB009DC936 /* UAGithubEngine_static.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6FBFE61CCFCBCB009DC936 /* UAGithubEngine_static.m */; };
 		CC52FF9F15378566005A767A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC52FF9E15378566005A767A /* Cocoa.framework */; };
 		CC52FFA615378566005A767A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC52FFA415378566005A767A /* InfoPlist.strings */; };
 		CC52FFC3153785F3005A767A /* NSArray+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = CC52FFAE153785F3005A767A /* NSArray+Utilities.h */; };
@@ -38,6 +40,9 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		681F4113134C9310002DD87D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CA6FBFE21CCFCBCB009DC936 /* libUAGithubEngine_static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUAGithubEngine_static.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6FBFE41CCFCBCB009DC936 /* UAGithubEngine_static.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UAGithubEngine_static.h; sourceTree = "<group>"; };
+		CA6FBFE61CCFCBCB009DC936 /* UAGithubEngine_static.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UAGithubEngine_static.m; sourceTree = "<group>"; };
 		CC52FF9D15378566005A767A /* UAGithubEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UAGithubEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC52FF9E15378566005A767A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CC52FFA015378566005A767A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -68,6 +73,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CA6FBFDF1CCFCBCB009DC936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC52FF9915378566005A767A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				CC52FF9D15378566005A767A /* UAGithubEngine.framework */,
+				CA6FBFE21CCFCBCB009DC936 /* libUAGithubEngine_static.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				CC52FFA115378566005A767A /* UAGithubEngine */,
+				CA6FBFE31CCFCBCB009DC936 /* UAGithubEngine_static */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -125,6 +139,15 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA6FBFE31CCFCBCB009DC936 /* UAGithubEngine_static */ = {
+			isa = PBXGroup;
+			children = (
+				CA6FBFE41CCFCBCB009DC936 /* UAGithubEngine_static.h */,
+				CA6FBFE61CCFCBCB009DC936 /* UAGithubEngine_static.m */,
+			);
+			path = UAGithubEngine_static;
 			sourceTree = "<group>";
 		};
 		CC52FFA115378566005A767A /* UAGithubEngine */ = {
@@ -177,6 +200,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		CA6FBFE01CCFCBCB009DC936 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6FBFE51CCFCBCB009DC936 /* UAGithubEngine_static.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC52FF9A15378566005A767A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,6 +229,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		CA6FBFE11CCFCBCB009DC936 /* UAGithubEngine_static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA6FBFE81CCFCBCB009DC936 /* Build configuration list for PBXNativeTarget "UAGithubEngine_static" */;
+			buildPhases = (
+				CA6FBFDE1CCFCBCB009DC936 /* Sources */,
+				CA6FBFDF1CCFCBCB009DC936 /* Frameworks */,
+				CA6FBFE01CCFCBCB009DC936 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UAGithubEngine_static;
+			productName = UAGithubEngine_static;
+			productReference = CA6FBFE21CCFCBCB009DC936 /* libUAGithubEngine_static.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		CC52FF9C15378566005A767A /* UAGithubEngine */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC52FFAB15378566005A767A /* Build configuration list for PBXNativeTarget "UAGithubEngine" */;
@@ -222,7 +270,14 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				CLASSPREFIX = UA;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Walmart;
+				TargetAttributes = {
+					CA6FBFE11CCFCBCB009DC936 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "UAGithubEngine" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -236,6 +291,7 @@
 			projectRoot = "";
 			targets = (
 				CC52FF9C15378566005A767A /* UAGithubEngine */,
+				CA6FBFE11CCFCBCB009DC936 /* UAGithubEngine_static */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +308,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CA6FBFDE1CCFCBCB009DC936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6FBFE71CCFCBCB009DC936 /* UAGithubEngine_static.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC52FF9815378566005A767A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,12 +350,12 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = 4.2;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
@@ -303,11 +367,10 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_VERSION = 4.2;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
@@ -316,11 +379,91 @@
 			};
 			name = Release;
 		};
+		CA6FBFE91CCFCBCB009DC936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UAGithubEngine/UAGithubEngine-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CA6FBFEA1CCFCBCB009DC936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UAGithubEngine/UAGithubEngine-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		CC52FFAC15378566005A767A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -340,6 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "UAGithubEngine/UAGithubEngine-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.underscore.mac.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
@@ -350,7 +494,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -365,6 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "UAGithubEngine/UAGithubEngine-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.underscore.mac.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
@@ -382,6 +526,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CA6FBFE81CCFCBCB009DC936 /* Build configuration list for PBXNativeTarget "UAGithubEngine_static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6FBFE91CCFCBCB009DC936 /* Debug */,
+				CA6FBFEA1CCFCBCB009DC936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		CC52FFAB15378566005A767A /* Build configuration list for PBXNativeTarget "UAGithubEngine" */ = {
 			isa = XCConfigurationList;
